@@ -1,0 +1,21 @@
+1:
+  text: 'Le patient travaille dans :'
+  answers:
+    - text: 'le public'
+      goto: 2
+    - text: 'le privé'
+      goto: 3
+2:
+  text: 'symptomatique ?'
+  answers:
+    - text: 'oui'
+      goto: "aller à l'hôpital"
+    - text: 'non'
+      goto: 'doliprane'
+3:
+  text: 'mutuelle ?'
+  answers:
+    - text: 'oui'
+      goto: 'cool'
+    - text: 'non'
+      goto: 'pas cool'
