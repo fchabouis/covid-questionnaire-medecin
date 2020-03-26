@@ -11,3 +11,6 @@
 * il est dans le fichier public/form.yml
 * si goto est un chiffre, on va à cette question
 * sinon c'est le résultat final !
+
+# Pour déployer
+* il suffit de pusher sur la branche master, ça va déployer sur https://brave-sinoussi-42bdbb.netlify.com/#/
