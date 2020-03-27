@@ -2,6 +2,9 @@
   <div>
     <div class="question" v-for="(item, i) of history" :key="item.qid">
       {{ i + 1 }}. {{ form[item.qid].text }}
+      <div class="infoContainer" v-if="form[item.qid].info">
+        <div class="info">info : {{ form[item.qid].info }}</div>
+      </div>
       <div class="answers">
         <span
           v-for="answer in form[item.qid].answers"
@@ -76,5 +79,16 @@ export default {
 .result {
   padding-top: 48px;
   font-weight: bold;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  background-color: lightgrey;
+  padding: 12px;
+  max-width: 500px;
 }
 </style>
